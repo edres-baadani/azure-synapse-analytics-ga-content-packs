@@ -83,15 +83,15 @@ $subscriptionId = (Get-AzContext).Subscription.Id
 $tenantId = (Get-AzContext).Tenant.Id
 $global:logindomain = (Get-AzContext).Tenant.Id;
 
-$workspaceName = "asagaworkspace$($uniqueId)"
-$dataLakeAccountName = "asagadatalake$($uniqueId)"
-$keyVaultName = "asagakeyvault$($uniqueId)"
+$workspaceName = "asaworkspace$($uniqueId)"
+$dataLakeAccountName = "asadatalake$($uniqueId)"
+$keyVaultName = "asakeyvault$($uniqueId)"
 $keyVaultSQLUserSecretName = "SQL-USER-ASA"
 $sqlPoolName = "SQLPool01"
 $integrationRuntimeName = "AutoResolveIntegrationRuntime"
 $sparkPoolName = "SparkPool01"
 $global:sqlEndpoint = "$($workspaceName).sql.azuresynapse.net"
-$global:sqlUser = "asaga.sql.admin"
+$global:sqlUser = "asa.sql.admin"
 
 $global:synapseToken = ""
 $global:synapseSQLToken = ""
