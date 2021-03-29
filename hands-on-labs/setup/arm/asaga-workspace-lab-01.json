@@ -4,19 +4,19 @@
     "variables": {
         "location": "[resourceGroup().location]",
         "uniqueSuffix": "[resourceGroup().tags['DeploymentId']]",
-        "workspaceName": "[concat('asagamachinelearning', variables('uniqueSuffix'))]",
+        "workspaceName": "[concat('asamachinelearning', variables('uniqueSuffix'))]",
         "sku": "enterprise",
-        "storageAccountName": "[concat('asagastorage', variables('uniqueSuffix'))]",
+        "storageAccountName": "[concat('asastorage', variables('uniqueSuffix'))]",
         "storageAccountType": "Standard_LRS",
-        "keyVaultName": "[concat('asagakeyvault', variables('uniqueSuffix'))]",
-        "applicationInsightsName": "[concat('asagaappinsights', variables('uniqueSuffix'))]",
-        "containerRegistryName": "[concat('asagacontainerregistry', variables('uniqueSuffix'))]",
+        "keyVaultName": "[concat('asakeyvault', variables('uniqueSuffix'))]",
+        "applicationInsightsName": "[concat('asaappinsights', variables('uniqueSuffix'))]",
+        "containerRegistryName": "[concat('asacontainerregistry', variables('uniqueSuffix'))]",
         "tenantId": "[subscription().tenantId]",
         "storageAccount": "[resourceId(resourceGroup().name, 'Microsoft.Storage/storageAccounts', variables('storageAccountName'))]",
         "keyVault": "[resourceId(resourceGroup().name, 'Microsoft.KeyVault/vaults', variables('keyVaultName'))]",
         "applicationInsights": "[resourceId(resourceGroup().name, 'Microsoft.Insights/components', variables('applicationInsightsName'))]",
         "containerRegistry": "[resourceId(resourceGroup().name, 'Microsoft.ContainerRegistry/registries', variables('containerRegistryName'))]",
-        "cognitiveServicesName": "[concat('asagacognitiveservices', variables('uniqueSuffix'))]"
+        "cognitiveServicesName": "[concat('asacognitiveservices', variables('uniqueSuffix'))]"
     },
     "resources": [
         {
