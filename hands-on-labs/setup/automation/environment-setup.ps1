@@ -197,7 +197,7 @@ else
 
 #$jobs = $(azcopy jobs list)
 
-$download = $true;
+$download = $false;
 
 $publicDataUrl = "https://solliancepublicdata.blob.core.windows.net/"
 $dataLakeStorageUrl = "https://"+ $dataLakeAccountName + ".dfs.core.windows.net/"
